@@ -5,11 +5,11 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#about", label: "Hakkında" },
-  { href: "#committees", label: "Komiteler" },
-  { href: "#fees", label: "Ücretler" },
-  { href: "#apply", label: "Başvur" },
-  { href: "#contact", label: "İletişim" },
+  { href: "#about", label: "About" },
+  { href: "#committees", label: "Committees" },
+  { href: "#fees", label: "Fees" },
+  { href: "#apply", label: "Apply" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -62,7 +62,7 @@ export default function Navbar() {
               href="#apply"
               className="ml-2 px-5 py-2 bg-[#c9a84c] text-[#0a1628] font-bold text-sm rounded-full hover:bg-[#e8c97a] transition-colors tracking-wide uppercase"
             >
-              Başvur
+              Apply
             </a>
           </div>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 px-5 py-3 bg-[#c9a84c] text-[#0a1628] font-bold text-sm rounded-full text-center hover:bg-[#e8c97a] transition-colors"
             >
-              Hemen Başvur
+              Apply Now
             </a>
           </div>
         </div>

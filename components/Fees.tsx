@@ -17,60 +17,60 @@ type FeeCategory = {
 
 const feeCategories: FeeCategory[] = [
   {
-    category: "Delege",
+    category: "Delegate",
     Icon: User,
     tiers: [
       {
-        title: "Bireysel Delege",
+        title: "Individual Delegate",
         price: "₺",
-        note: "Yakında açıklanacak",
+        note: "To be announced",
         features: [
-          "Tüm komite oturumlarına katılım",
-          "Konferans materyalleri",
-          "Yaka kartı ve sertifika",
-          "Sosyal etkinlikler",
+          "Participation in all committee sessions",
+          "Conference materials",
+          "Badge and certificate",
+          "Social events",
         ],
         highlighted: false,
       },
       {
-        title: "Delegasyon",
+        title: "Delegation",
         price: "₺",
-        note: "Min. 5 delege — yakında",
+        note: "Min. 5 delegates — coming soon",
         features: [
-          "Tüm bireysel delege hakları",
-          "Özel delegasyon desteği",
-          "Grup koordinasyonu",
-          "İndirimli grup fiyatı",
+          "All individual delegate benefits",
+          "Dedicated delegation support",
+          "Group coordination",
+          "Discounted group rate",
         ],
         highlighted: true,
       },
     ],
   },
   {
-    category: "Akademik Kadro",
+    category: "Academic Staff",
     Icon: GraduationCap,
     tiers: [
       {
         title: "Chair",
         price: "₺",
-        note: "Yakında açıklanacak",
+        note: "To be announced",
         features: [
-          "Komite yönetimi yetkisi",
-          "Eğitim oturumları",
-          "Liderlik sertifikası",
-          "Özel etkinliklere davet",
+          "Committee management authority",
+          "Training sessions",
+          "Leadership certificate",
+          "Invitation to special events",
         ],
         highlighted: false,
       },
       {
-        title: "Admin & Basın",
+        title: "Admin & Press",
         price: "₺",
-        note: "Yakında açıklanacak",
+        note: "To be announced",
         features: [
-          "Organizasyon ekibine dahil",
-          "Basın akreditasyonu",
-          "Tüm etkinliklere erişim",
-          "Katılım sertifikası",
+          "Part of the organizing team",
+          "Press accreditation",
+          "Access to all events",
+          "Participation certificate",
         ],
         highlighted: false,
       },
@@ -87,14 +87,14 @@ export default function Fees() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-[#c9a84c] text-sm tracking-widest uppercase font-medium mb-4">
-            Katılım Ücretleri
+            Participation Fees
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
-            Ücret <span className="text-[#c9a84c]">Planları</span>
+            Fee <span className="text-[#c9a84c]">Plans</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">
-            Rol ve katılım şeklinize göre uygun planı seçin.
-            Kesin ücretler yakında duyurulacaktır.
+            Choose the plan that fits your role and participation type.
+            Final fees will be announced soon.
           </p>
         </div>
 
@@ -107,11 +107,11 @@ export default function Fees() {
               <h3 className="text-xl font-bold text-white/80 tracking-wide">{cat.category}</h3>
               <div className="flex-1 h-px bg-white/10" />
             </div>
-            <div className="grid sm:grid-cols-2 gap-6 max-w-3xl">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl">
               {cat.tiers.map((tier) => (
                 <div
                   key={tier.title}
-                  className={`relative rounded-2xl p-8 border transition-all duration-300 hover:scale-[1.02] ${
+                  className={`relative rounded-2xl p-5 sm:p-8 border transition-all duration-300 hover:scale-[1.02] ${
                     tier.highlighted
                       ? "border-[#c9a84c] bg-[#112240] shadow-xl shadow-[#c9a84c]/10"
                       : "border-white/10 bg-[#112240]/60 hover:border-[#c9a84c]/40"
@@ -119,7 +119,7 @@ export default function Fees() {
                 >
                   {tier.highlighted && (
                     <div className="absolute -top-3 left-6 px-3 py-1 bg-[#c9a84c] text-[#0a1628] text-xs font-bold rounded-full tracking-wider">
-                      POPÜLER
+                      POPULAR
                     </div>
                   )}
 
@@ -148,7 +148,7 @@ export default function Fees() {
                         : "bg-white/10 text-white hover:bg-[#c9a84c]/20 hover:text-[#c9a84c]"
                     }`}
                   >
-                    Başvur
+                    Apply
                   </a>
                 </div>
               ))}
@@ -159,10 +159,9 @@ export default function Fees() {
         {/* Note */}
         <div className="mt-4 p-6 rounded-2xl bg-[#112240]/60 border border-white/10 max-w-3xl">
           <p className="text-white/50 text-sm leading-relaxed">
-            <span className="text-[#c9a84c] font-semibold">Not:</span> Ücretler ve ödeme
-            detayları yakında duyurulacaktır. Başvuru sonrasında ödeme talimatları
-            e-posta ile iletilecektir. Reşit olmayan katılımcıların veli onay formu
-            doldurması gerekmektedir.
+            <span className="text-[#c9a84c] font-semibold">Note:</span> Fees and payment
+            details will be announced soon. Payment instructions will be sent via email
+            after your application. Participants under 18 must submit a parental consent form.
           </p>
         </div>
       </div>

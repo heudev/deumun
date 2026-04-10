@@ -5,7 +5,7 @@ const committees = [
     id: "UNSC",
     name: "UNSC",
     fullName: "United Nations Security Council",
-    desc: "Uluslararası barış ve güvenliği korumakla görevli BM'nin en yetkili organı.",
+    desc: "The UN's most authoritative body responsible for maintaining international peace and security.",
     image: "/UNSC.jpg",
     color: "#1a3a6b",
   },
@@ -13,7 +13,7 @@ const committees = [
     id: "DISEC",
     name: "DISEC",
     fullName: "Disarmament and International Security Committee",
-    desc: "Silahsızlanma ve uluslararası güvenlik alanındaki meseleleri ele alan BM Birinci Komitesi.",
+    desc: "The UN First Committee addressing issues in disarmament and international security.",
     image: "/DISEC.png",
     color: "#1a4a3b",
   },
@@ -21,7 +21,7 @@ const committees = [
     id: "UNWOMEN",
     name: "UN Women",
     fullName: "United Nations Entity for Gender Equality",
-    desc: "Toplumsal cinsiyet eşitliği ve kadın güçlendirmesi için çalışan BM birimi.",
+    desc: "The UN entity dedicated to gender equality and the empowerment of women.",
     image: "/unwomen.png",
     color: "#5a1a6b",
   },
@@ -29,7 +29,7 @@ const committees = [
     id: "UNHRC",
     name: "UNHRC",
     fullName: "United Nations Human Rights Council",
-    desc: "Dünya genelinde insan haklarının korunması ve geliştirilmesinden sorumlu BM organı.",
+    desc: "The UN body responsible for the promotion and protection of human rights worldwide.",
     image: "/UNHRC_2.jpg",
     color: "#6b1a1a",
   },
@@ -37,7 +37,7 @@ const committees = [
     id: "ECOSOC",
     name: "ECOSOC",
     fullName: "Economic and Social Council",
-    desc: "Ekonomik, sosyal ve çevresel konularda politika tartışmalarını yürüten merkezi BM forumu.",
+    desc: "The central UN forum conducting policy discussions on economic, social, and environmental issues.",
     image: "/UN.jpeg",
     color: "#1a4a6b",
   },
@@ -45,7 +45,7 @@ const committees = [
     id: "JCC",
     name: "JCC (Timur)",
     fullName: "Joint Crisis Committee — Timur",
-    desc: "Tarihsel kriz senaryolarını dinamik ve hızlı karar alma mekanizmalarıyla ele alan özel kriz komitesi.",
+    desc: "A special crisis committee tackling historical crisis scenarios through dynamic and rapid decision-making.",
     image: "/Timur.jpg",
     color: "#4a3a1a",
   },
@@ -60,14 +60,14 @@ export default function Committees() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-[#c9a84c] text-sm tracking-widest uppercase font-medium mb-4">
-            Komiteler
+            Committees
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
-            2026 Komite <span className="text-[#c9a84c]">Kadrosu</span>
+            2026 Committee <span className="text-[#c9a84c]">Lineup</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">
-            DEUMUN 2026&apos;da 6 farklı komitede delege olarak yer alarak küresel
-            sorunları diplomatik perspektifle tartışabilirsiniz.
+            Join DEUMUN 2026 as a delegate in one of 6 committees and engage
+            with global issues from a diplomatic perspective.
           </p>
         </div>
 

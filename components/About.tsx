@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Globe, Users, Award } from "lucide-react";
 
 const stats = [
-  { icon: Globe, value: "6", label: "Komite" },
-  { icon: Users, value: "200+", label: "Beklenen Delege" },
-  { icon: Award, value: "3", label: "Gün" },
+  { icon: Globe, value: "6", label: "Committees" },
+  { icon: Users, value: "200+", label: "Expected Delegates" },
+  { icon: Award, value: "3", label: "Days" },
 ];
 
 export default function About() {
@@ -19,31 +19,31 @@ export default function About() {
           {/* Text */}
           <div>
             <p className="text-[#c9a84c] text-sm tracking-widest uppercase font-medium mb-4">
-              Hakkımızda
+              About Us
             </p>
             <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 leading-tight">
-              DEUMUN&apos;a <br />
-              <span className="text-[#c9a84c]">Hoş Geldiniz</span>
+              Welcome to <br />
+              <span className="text-[#c9a84c]">DEUMUN</span>
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-6">
-              Dokuz Eylül Üniversitesi Model Birleşmiş Milletler (DEUMUN), genç
-              diplomatlara uluslararası ilişkileri deneyimleme, diplomatik becerilerini
-              geliştirme ve küresel sorunlar üzerine tartışma platformu sunmaktadır.
+              Dokuz Eylül University Model United Nations (DEUMUN) provides young
+              diplomats with a platform to experience international relations, develop
+              their diplomatic skills, and discuss global issues.
             </p>
             <p className="text-white/60 leading-relaxed mb-10">
-              22–24 Mayıs 2026 tarihleri arasında İzmir&apos;de gerçekleşecek olan
-              konferansımızda 6 farklı komitede delegates olarak yer alabilir, liderlik
-              ve müzakere becerilerinizi küresel düzeyde sergileyebilirsiniz.
+              At our conference taking place in Izmir from May 22–24, 2026, you can
+              serve as a delegate in 6 different committees and showcase your leadership
+              and negotiation skills on a global stage.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6">
               {stats.map(({ icon: Icon, value, label }) => (
                 <div key={label} className="text-center">
-                  <div className="w-12 h-12 rounded-xl bg-[#c9a84c]/10 border border-[#c9a84c]/20 flex items-center justify-center mx-auto mb-3">
-                    <Icon size={22} className="text-[#c9a84c]" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#c9a84c]/10 border border-[#c9a84c]/20 flex items-center justify-center mx-auto mb-3">
+                    <Icon size={20} className="text-[#c9a84c]" />
                   </div>
-                  <div className="text-3xl font-black text-white">{value}</div>
+                  <div className="text-2xl sm:text-3xl font-black text-white">{value}</div>
                   <div className="text-xs text-white/50 mt-1 tracking-wide">{label}</div>
                 </div>
               ))}

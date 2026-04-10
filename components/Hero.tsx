@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/s-ad4c4843724face61428a3f3db60920eb13be4b6.jpg"
-          alt="Dokuz Eylül Üniversitesi Konferans Salonu"
+          alt="Dokuz Eylül University Conference Hall"
           fill
           className="object-cover object-center"
           priority
@@ -41,10 +41,10 @@ export default function Hero() {
         {/* Title */}
         <div className="mb-2">
           <span className="text-xs sm:text-sm tracking-[0.4em] text-[#c9a84c] font-medium uppercase">
-            Dokuz Eylül Üniversitesi
+            Dokuz Eylül University
           </span>
         </div>
-        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-2">
+        <h1 className="text-4xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-2">
           <span className="text-white">DEU</span>
           <span className="text-[#c9a84c]">MUN</span>
         </h1>
@@ -54,27 +54,27 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="text-lg sm:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed">
-          Model Birleşmiş Milletler konferansında diplomasiyi deneyimle,
-          perspektifleri sorgula, geleceği şekillendir.
+          Experience diplomacy at the Model United Nations conference,
+          challenge perspectives, and shape the future.
         </p>
 
         {/* Date & Location */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mb-12">
           <div className="flex items-center gap-2 text-white/80">
             <Calendar size={18} className="text-[#c9a84c]" />
-            <span className="font-medium">22 – 24 Mayıs 2026</span>
+            <span className="font-medium">May 22 – 24, 2026</span>
           </div>
           <div className="hidden sm:block w-px h-5 bg-white/30" />
           <div className="flex items-center gap-2 text-white/80">
             <MapPin size={18} className="text-[#c9a84c]" />
-            <span className="font-medium">Dokuz Eylül Üniversitesi, İzmir</span>
+            <span className="font-medium">Dokuz Eylül University, Izmir</span>
           </div>
         </div>
 
         {/* Countdown */}
         <div className="mb-12">
           <p className="text-xs tracking-widest text-white/40 uppercase mb-4">
-            Konferansa kalan süre
+            Time until the conference
           </p>
           <Countdown />
         </div>
@@ -85,20 +85,20 @@ export default function Hero() {
             href="#apply"
             className="px-8 py-4 bg-[#c9a84c] text-[#0a1628] font-bold rounded-full hover:bg-[#e8c97a] transition-all duration-300 tracking-wide text-sm uppercase shadow-lg shadow-[#c9a84c]/30 hover:shadow-[#c9a84c]/50 hover:scale-105"
           >
-            Hemen Başvur
+            Apply Now
           </a>
           <a
             href="#committees"
             className="px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-full hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all duration-300 tracking-wide text-sm uppercase"
           >
-            Komiteleri Keşfet
+            Explore Committees
           </a>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-8 z-10 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-xs text-white/50 tracking-widest uppercase [writing-mode:vertical-lr] rotate-180">Keşfet</span>
+      <div className="absolute bottom-8 left-8 z-10 hidden sm:flex flex-col items-center gap-2 opacity-50">
+        <span className="text-xs text-white/50 tracking-widest uppercase [writing-mode:vertical-lr] rotate-180">Explore</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/50 to-transparent animate-pulse" />
       </div>
     </section>

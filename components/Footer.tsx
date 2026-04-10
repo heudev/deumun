@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#050d1a] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -20,22 +20,22 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
-              Dokuz Eylül Üniversitesi Model Birleşmiş Milletler Konferansı.
-              22–24 Mayıs 2026, İzmir.
+              Dokuz Eylül University Model United Nations Conference.
+              May 22–24, 2026, Izmir.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-white font-semibold mb-6 tracking-wide uppercase text-sm">
-              Hızlı Erişim
+              Quick Links
             </h4>
             <ul className="space-y-3">
               {[
-                ["Hakkında", "#about"],
-                ["Komiteler", "#committees"],
-                ["Ücretler", "#fees"],
-                ["Başvuru", "#apply"],
+                ["About", "#about"],
+                ["Committees", "#committees"],
+                ["Fees", "#fees"],
+                ["Application", "#apply"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <a
@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-white font-semibold mb-6 tracking-wide uppercase text-sm">
-              İletişim
+              Contact
             </h4>
             <ul className="space-y-4">
               <li>
@@ -78,7 +78,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-start gap-3 text-white/50 text-sm">
                   <MapPin size={16} className="text-[#c9a84c]/60 flex-shrink-0 mt-0.5" />
-                  <span>Dokuz Eylül Üniversitesi, Buca / İzmir</span>
+                  <span>Dokuz Eylül University, Buca / Izmir</span>
                 </div>
               </li>
             </ul>
@@ -88,11 +88,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs">
-            © 2026 DEUMUN — Dokuz Eylül Üniversitesi Model Birleşmiş Milletler
+            © 2026 DEUMUN — Dokuz Eylül University Model United Nations
           </p>
           <div className="flex items-center gap-1">
             <div className="w-2 h-2 rounded-full bg-[#c9a84c]" />
-            <span className="text-white/30 text-xs">22–24 Mayıs 2026, İzmir</span>
+            <span className="text-white/30 text-xs">May 22–24, 2026, Izmir</span>
           </div>
         </div>
       </div>

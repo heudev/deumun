@@ -19,6 +19,7 @@ html {
 body {
   background-color: #0a1628;
   color: white;
+  overflow-x: hidden;
 }
 
 @keyframes pulse-glow {
