@@ -5,7 +5,7 @@ const committees = [
     id: "UNSC",
     name: "UNSC",
     fullName: "United Nations Security Council",
-    desc: "The UN's most authoritative body responsible for maintaining international peace and security.",
+    desc: "The UN Security Council is the most powerful organ of the UN, holding the unique authority to issue binding resolutions, impose sanctions, and authorize the use of force. In this high-stakes environment, delegates represent the world's major powers and rotating members to maintain international peace and security. Expect a fast-paced simulation where diplomacy meets real-world crisis management, and every word in a resolution can alter the course of history.",
     image: "/UNSC.jpg",
     color: "#1a3a6b",
   },
@@ -13,15 +13,15 @@ const committees = [
     id: "DISEC",
     name: "DISEC",
     fullName: "Disarmament and International Security Committee",
-    desc: "The UN First Committee addressing issues in disarmament and international security.",
+    desc: "The First Committee of the General Assembly, DISEC, stands as the cornerstone of global peace and stability. Tasked with addressing the challenges of armament and the threats to international security, this committee invites delegates to navigate the complex landscape of nuclear non-proliferation, cyber-warfare, and regional instabilities. In DISEC, you will engage in rigorous debate to forge multilateral agreements that aim to reduce the risk of conflict and ensure a safer world for future generations.",
     image: "/DISEC.png",
     color: "#1a4a3b",
   },
   {
     id: "UNWOMEN",
     name: "UN Women",
-    fullName: "United Nations Entity for Gender Equality",
-    desc: "The UN entity dedicated to gender equality and the empowerment of women.",
+    fullName: "United Nations Entity for Gender Equality and the Empowerment of Women",
+    desc: "As the global champion for gender equality, UN Women focuses on the empowerment of women and girls as a prerequisite for social and economic progress. In this committee, delegates will tackle systemic barriers, advocate for legislative reforms, and address issues ranging from the gender pay gap to the protection of women in conflict zones. Your mission is to craft inclusive policies that dismantle discrimination and ensure that &ldquo;Equality for All&rdquo; is not just a slogan, but a global reality.",
     image: "/unwomen.png",
     color: "#5a1a6b",
   },
@@ -29,7 +29,7 @@ const committees = [
     id: "UNHRC",
     name: "UNHRC",
     fullName: "United Nations Human Rights Council",
-    desc: "The UN body responsible for the promotion and protection of human rights worldwide.",
+    desc: "The UNHRC is the premier inter-governmental body responsible for the promotion and protection of all human rights around the globe. Delegates in this committee act as the moral conscience of the international community, investigating human rights violations and addressing critical thematic issues such as freedom of speech, refugee rights, and social justice. Here, the challenge is to balance national sovereignty with the universal responsibility to uphold human dignity.",
     image: "/UNHRC_2.jpg",
     color: "#6b1a1a",
   },
@@ -37,15 +37,15 @@ const committees = [
     id: "ECOSOC",
     name: "ECOSOC",
     fullName: "Economic and Social Council",
-    desc: "The central UN forum conducting policy discussions on economic, social, and environmental issues.",
+    desc: "ECOSOC serves as the central platform for fostering international cooperation on economic, social, and environmental issues. As the body responsible for coordinating the 17 Sustainable Development Goals, ECOSOC requires delegates to think like visionaries and pragmatists. Whether addressing global poverty, sustainable urban growth, or healthcare equity, your goal is to build a sustainable framework that bridges the gap between developed and developing nations.",
     image: "/UN.jpeg",
     color: "#1a4a6b",
   },
   {
     id: "JCC",
     name: "JCC (Timur)",
-    fullName: "Joint Crisis Committee — Timur",
-    desc: "A special crisis committee tackling historical crisis scenarios through dynamic and rapid decision-making.",
+    fullName: "Joint Crisis Committee — Timur's Western Campaign",
+    desc: "Step into the pages of history with the Joint Crisis Committee, where the past is shaped by your decisions in real-time. This specialized committee features two or more rooms representing opposing sides of a historical conflict—in this case, the unstoppable forces of Timur (Tamerlane) and the defensive powers of the West. Unlike standard committees, the JCC is driven by &ldquo;crisis updates,&rdquo; forcing delegates to react to shifting frontlines, espionage, and political betrayals. Will you secure the Silk Road or defend the gates of the West?",
     image: "/Timur.jpg",
     color: "#4a3a1a",
   },
@@ -76,7 +76,7 @@ export default function Committees() {
           {committees.map((c) => (
             <div
               key={c.id}
-              className="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-[#c9a84c]/50 transition-all duration-500 cursor-pointer"
+              className="group relative flex flex-col rounded-2xl overflow-hidden border border-white/10 hover:border-[#c9a84c]/50 transition-all duration-500 cursor-pointer"
             >
               {/* Background Image */}
               <div className="relative h-52 overflow-hidden">
@@ -84,6 +84,7 @@ export default function Committees() {
                   src={c.image}
                   alt={c.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div
@@ -99,7 +100,7 @@ export default function Committees() {
               </div>
 
               {/* Content */}
-              <div className="p-6 bg-[#112240]">
+              <div className="flex-1 p-6 bg-[#112240]">
                 <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#c9a84c] transition-colors">
                   {c.name}
                 </h3>

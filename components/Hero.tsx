@@ -8,22 +8,22 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/s-ad4c4843724face61428a3f3db60920eb13be4b6.jpg"
+          src="/hero-conference.jpg"
           alt="Dokuz Eylül University Conference Hall"
           fill
-          className="object-cover object-center"
+          sizes="100vw"
+          className="object-cover object-[center_60%]"
           priority
           quality={90}
         />
         {/* Dark overlays */}
-        <div className="absolute inset-0 bg-[#0a1628]/70" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/40 via-transparent to-[#0a1628]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/60 via-transparent to-[#0a1628]/60" />
+        <div className="absolute inset-0 bg-[#0a1628]/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/60 via-[#0a1628]/20 to-[#0a1628]" />
       </div>
 
       {/* UN emblem watermark */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-5">
-        <Image src="/UN.jpeg" alt="" width={600} height={600} className="object-contain" />
+        <Image src="/UN.jpeg" alt="" width={600} height={600} className="object-contain w-auto h-auto" />
       </div>
 
       {/* Content */}
@@ -34,6 +34,7 @@ export default function Hero() {
             src="/DEUMUN_logo.jpeg"
             alt="DEUMUN Logo"
             fill
+            sizes="(max-width: 640px) 96px, 128px"
             className="object-cover"
           />
         </div>
