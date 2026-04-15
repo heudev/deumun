@@ -57,11 +57,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:info@deumun.com"
+                  href="mailto:deumodelunitednation@gmail.com"
                   className="flex items-center gap-3 text-white/50 hover:text-[#c9a84c] text-sm transition-colors group"
                 >
                   <Mail size={16} className="text-[#c9a84c]/60 group-hover:text-[#c9a84c]" />
-                  info@deumun.com
+                  deumodelunitednation@gmail.com
                 </a>
               </li>
               <li>
