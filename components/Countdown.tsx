@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const CONFERENCE_DATE = new Date("2026-05-22T09:00:00");
+const CONFERENCE_DATE = new Date("2026-06-19T09:00:00");
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
