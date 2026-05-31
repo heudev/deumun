@@ -9,11 +9,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "DEUMUN 2026 | Dokuz Eylül University Model United Nations",
-  description: "DEUMUN 2026 — Dokuz Eylül University Model United Nations Conference. May 22–24, 2026, Izmir.",
+  description: "DEUMUN 2026 — Dokuz Eylül University Model United Nations Conference. June 19–21, 2026, Izmir.",
   keywords: ["DEUMUN", "MUN", "Model United Nations", "Dokuz Eylül", "Izmir", "2026"],
   openGraph: {
     title: "DEUMUN 2026",
-    description: "May 22–24, 2026 | Izmir",
+    description: "June 19–21, 2026 | Izmir",
     type: "website",
   },
 };

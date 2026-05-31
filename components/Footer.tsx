@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Dokuz Eylül University Model United Nations Conference.
-              May 22–24, 2026, Izmir.
+              June 19–21, 2026, Izmir.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-1">
             <div className="w-2 h-2 rounded-full bg-[#c9a84c]" />
-            <span className="text-white/30 text-xs">May 22–24, 2026, Izmir</span>
+            <span className="text-white/30 text-xs">June 19–21, 2026, Izmir</span>
           </div>
         </div>
       </div>

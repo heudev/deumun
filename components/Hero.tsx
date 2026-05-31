@@ -63,7 +63,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mb-12">
           <div className="flex items-center gap-2 text-white/80">
             <Calendar size={18} className="text-[#c9a84c]" />
-            <span className="font-medium">May 22 – 24, 2026</span>
+            <span className="font-medium">June 19 – 21, 2026</span>
           </div>
           <div className="hidden sm:block w-px h-5 bg-white/30" />
           <div className="flex items-center gap-2 text-white/80">

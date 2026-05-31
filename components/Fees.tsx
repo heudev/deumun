@@ -97,7 +97,7 @@ export default function Fees() {
             <Clock size={18} className="text-white/40 flex-shrink-0" />
             <div>
               <p className="text-white/70 font-bold text-sm">Normal Registration</p>
-              <p className="text-white/40 text-xs">May 1 – May 10</p>
+              <p className="text-white/40 text-xs">Until June 3</p>
             </div>
           </div>
         </div>

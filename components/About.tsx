@@ -31,7 +31,7 @@ export default function About() {
               their diplomatic skills, and discuss global issues.
             </p>
             <p className="text-white/60 leading-relaxed mb-10">
-              At our conference taking place in Izmir from May 22–24, 2026, you can
+              At our conference taking place in Izmir from June 19–21, 2026, you can
               serve as a delegate in 6 different committees and showcase your leadership
               and negotiation skills on a global stage.
             </p>
